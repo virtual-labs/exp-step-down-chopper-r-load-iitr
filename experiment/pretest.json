@@ -1,39 +1,58 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+    "version": 2.0,
+    "questions":[
+		{
+			"question": " What is the primary function of a step-down chopper?",
+			"answers": {
+				"a": "To increase the output voltage",
+				"b": "To regulate the input voltage",
+				"c": "To reduce the output voltage",
+				"d": "To convert AC to DC voltage"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "Step-down choppers are commonly known as?",
+			"answers": {
+				"a": "Inverting converters",
+				"b": "Boost converters",
+				"c": "Buck converters",
+				"d": "Flyback converters"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "What is the duty cycle of a chopper ?",
+			"answers": {
+				"a": "Ton/Toff",
+				"b": "Ton/T",
+				"c": "T/Ton",
+				"d": "Toff * Ton"
+			},
+			"correctAnswer": "b"
+		},
+		{
+			"question": "Step-down choppers are commonly used for",
+			"answers": {
+				"a": "DC motor speed control",
+				"b": "Solar panel voltage regulation",
+				"c": "LED dimming",
+				"d": "All of the above"
+			},
+			"correctAnswer": "d"
+		},
+		{
+			"question": " What type of losses is typically associated with the rapid switching action of the step-down chopper's components?",
+			"answers": {
+				"a": "Conduction losses",
+				"b": "Switching losses",
+				"c": "Core losses",
+				"d": "Hysteresis losses"
+			},
+			"correctAnswer": "b"
+		}
+	]
 }
+
+
+
