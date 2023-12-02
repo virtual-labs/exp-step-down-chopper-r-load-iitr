@@ -1,1 +1,1 @@
-## Experiment name
+## Step-down Chopper with R Load

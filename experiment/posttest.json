@@ -1,39 +1,52 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+[
+		{
+			"question": "Find the output voltage expression for a step down chopper with Vs as the input voltage and α as the duty cycle?",
+			"answers": {
+				"a": "Vo = Vs/α",
+				"b": "Vo = 2Vs/απ",
+				"c": "Vo = V²s/α",
+				"d": "Vo = Vs*α"
+			},
+			"correctAnswer": "d"
+		},
+		{
+			"question": "In a step down chopper, if Vs = 100 V and the chopper is operated at a duty cycle of 75 %. Find the output voltage?",
+			"answers": {
+				"a": "75 V",
+				"b": "100 V",
+				"c": "25 V",
+				"d": "None of the above"
+			},
+			"correctAnswer": "a"
+		},
+		{
+			"question": "What is the typical switching element used in a step-down chopper?",
+			"answers": {
+				"a": "Diode",
+				"b": "Capacitor",
+				"c": "Transistor",
+				"d": "Inductor"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "If a step down chopper’s switch is always kept open then?",
+			"answers": {
+				"a": "Vo = ∞",
+				"b": "Vo = Vs",
+				"c": "Vo = 0",
+				"d": "Vo > Vs"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "A step down chopper has input dc voltage of 220 V and R = 10 Ω in series with L = 65 mH. If the load current varies linearly between 11 A and 17 A, then find the duty cycle α?",
+			"answers": {
+				"a": "0.6",
+				"b": "0.7",
+				"c": "0.4",
+				"d": "1"
+			},
+			"correctAnswer": "b"
+		}
+	]
