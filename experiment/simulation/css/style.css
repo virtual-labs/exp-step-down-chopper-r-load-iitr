@@ -51,7 +51,7 @@ body {
 
 #diagram {
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   gap: 30px;
   padding: 10px;
   padding-top: 4vh;
@@ -72,7 +72,7 @@ body {
 
 .dia-row {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   gap: 30px;
 }
 
@@ -92,13 +92,12 @@ body {
   margin: 5px;
   height: 60px;
   visibility: hidden;
-
-
+  
 }
 
 .use {
   height: 60px;
-  width: 60px;
+  width: 50px;
 }
 
 .comp-ele {
@@ -168,7 +167,6 @@ input {
   background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-  
 }
 .dropdown:hover .dropbtn {
   background-color: forestgreen;
@@ -337,7 +335,7 @@ input {
   display: block;
 }
 
-#button {
+button {
   width: 120px;
   margin-top: 7px;
   margin-bottom: 10px;
@@ -355,7 +353,7 @@ input {
   position: relative;
   height: 10px;
   width: 10px;
-  top: 0px;
+  top: 1px;
   left: 25px;
 }
 
@@ -363,7 +361,7 @@ input {
   position: relative;
   height: 10px;
   width: 10px;
-  top: 40px;
+  top: 39px;
   left: 25px;
 }
 
@@ -432,8 +430,11 @@ input {
 
 .ac-value {
   position: relative;
-  left: 12px;
-  top: -5px;
+  left: 3px;
+  top: -9px;
+  display: flex;
+  justify-content: center;
+  width: 50px;
 }
 
 .top-serial-no {
@@ -484,12 +485,11 @@ input {
 .graph-style {
   width: 100%;
   height: 225px;
-  padding-top: 4px;
 }
 
 .reading {
   padding: 10px;
-  
+  display: none;
 }
 
 .sub-reading {
@@ -555,11 +555,15 @@ footer {
 .set-value-btn {
   width: 79px;
   padding: 4px 0px;
-  margin-top: 7px;
   cursor: pointer;
 }
 .set-value-btn:hover {
-  background-image: linear-gradient( 45deg, #ff512f 0%, #f09819 51%, #ff512f 100% );
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
   color: black;
 }
 .set-input {
@@ -613,130 +617,424 @@ label {
 #component_head:hover {
   background-color: forestgreen;
 }
-.right-end-gate {
+.swal-height {
+  height: 100px;
+}
+.swal2-title {
+  padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.righttop-end {
+  position: relative;
+  left: 85%;
+}
+.mos-left-end {
+  position: relative;
+  top: 13px;
+  left: 0px;
+  height: 10px;
+  width: 10px;
+}
+.rightbottom-end {
+  position: relative;
+  left: 85%;
+}
+.mos-r-t-s {
+  position: relative;
+  top: -36px;
+  left: 34px;
+  width: 0px;
+}
+.mos-l-s {
+  position: relative;
+  top: -40px;
+  width: 0px;
+}
+.mos-r-b-s {
+  position: relative;
+  top: -17px;
+  left: 34px;
+  width: 0px;
+}
+.mos-name {
+  position: relative;
+  top: -71px;
+  left: 63px;
+  width: 56px;
+}
+
+.resis-left-end {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 24.5px;
+  left: -1px;
+}
+.resis-right-end {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  left: 50px;
+  top: 14.5px;
+}
+.resis-l-serial-no {
+  position: relative;
+  top: 14px;
+  width: 0px;
+  left: -5px;
+}
+.resis-r-serial-no {
+  position: relative;
+  top: -5px;
+  left: 51px;
+  width: 0px;
+}
+.resis-name {
+  position: relative;
+  top: -58px;
+  left: 9px;
+  display: flex;
+  justify-content: center;
+  width: 41px;
+}
+.resis-value {
+  position: relative;
+  top: -25px;
+  left: 7px;
+  display: flex;
+  justify-content: center;
+  width: 55px;
+}
+.ind-name {
+  position: relative;
+  top: -65px;
+  left: 9px;
+  display: flex;
+  justify-content: center;
+  width: 41px;
+}
+.gate-name {
+  position: relative;
+  top: -39px;
+  left: 39px;
+}
+.swit-name {
+  position: relative;
+  top: -49px;
+  left: 40px;
+}
+.opampt {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 0px;
+  left: 25px;
+}
+.opamprb {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 40px;
+  left: 41px;
+}
+.opamplb {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 30px;
+  left: 8px;
+}
+.opampts {
+  width: 17px;
+  height: 18px;
+  position: relative;
+  top: -34px;
+  left: 8px;
+  width: 0px;
+}
+.opamplbs {
+  position: relative;
+  top: 0px;
+  left: -11px;
+  width: 17px;
+  height: 18px;
+  width: 0px;
+}
+.opamprbs {
+  width: 17px;
+  height: 18px;
+  position: relative;
+  top: -21px;
+  left: 53px;
+  width: 0px;
+}
+.opamp-name {
+  position: relative;
+  top: -67px;
+  left: 47px;
+}
+.volt-name {
+  position: relative;
+  left: 0px;
+  top: -8px;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+.volt-serial-left {
+  position: relative;
+  left: -8px;
+  top: 15px;
+  width: 0px;
+}
+.volt-serial-right {
+  position: relative;
+  top: -5px;
+  left: 47px;
+  width: 0px;
+}
+.volt-left-end {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 20px;
+  left: -1px;
+}
+.volt-right-end {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 10px;
+  left: 41px;
+}
+.ac-right-serial {
+  position: relative;
+  left: 62px;
+  top: -3px;
+  width: 0px;
+}
+.ac-left-end {
   position: relative;
   height: 10px;
   width: 10px;
   top: 25px;
-  left: 58px;
+  left: 2px;
+}
+.ac-right-end {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 13px;
+  left: 51px;
+}
+.ac-name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -3px;
+  width: 45px;
+  left: 0px;
+}
+.lower {
+  position: relative;
+}
+.TOP {
+  top: -2px;
+}
+.LEFT {
+  left: -2px;
+}
+.BOTTOM {
+  bottom: -2px;
+}
+.RIGHT {
+  right: -2px;
+}
+.red-circle {
+  position: relative;
+  z-index: 5;
+}
+.thy-top-end {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  left: 20px;
+}
+
+.thy-bottom-end {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.thy-right-end {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  left: 37px;
+  top: -9px;
+}
+.thy-t-s {
+  position: relative;
+  width: 0px;
+  top: -35px;
+  left: 3px;
+}
+.thy-r-s {
+  position: relative;
+  width: 0px;
+  top: -63px;
+  left: 41px;
+}
+.thy-b-s {
+  position: relative;
+  width: 0px;
+  top: -25px;
+  left: 1px;
+}
+.thy-name {
+  position: relative;
+  top: -63px;
+  left: 45px;
+  width: 50px;
+}
+.thy-name1 {
+  width: 50px;
+  position: relative;
+  top: -60px;
+  left: -44px;
+}
+.gate-left-end {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  top: 18px;
+  left: -7px;
+}
+.gate-left-end1 {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  top: 22px;
+  left: -7px;
+}
+.gatepulse {
+  position: relative;
+
+  top: -23px;
+}
+.gate-name {
+  top: 16px;
+  left: 9px;
 }
 .gate-serial {
   position: relative;
-  height: 0px;
   width: 0px;
-  top: 25px;
-  left: 60px;
-  width: 0px;
+  left: -10px;
+  top: -7px;
 }
-.gate-name {
+.gate-serial1 {
   position: relative;
-  top: 41px;width: 85px;
+  width: 0px;
+  left: -13px;
+  top: 21px;
 }
 .gate-value {
   position: relative;
-  top: 42px;width: 70px;
+  top: 16px;
+  left: 8px;
+  width: 0px;
+}
+.dis-inst {
+  display: block;
+}
+.upper-end {
+  top: 0px;
+  left: 20px;
+}
+.lower-end {
+  top: 31px;
+  left: 20px;
+}
+.top-serial-no {
+  top: -31px;
+  left: -1px;
+}
+.bottom-serial-no {
+  top: 5px;
+  left: -1px;
+}
+.gatepulse1 {
+  position: relative;
+  top: -23px;
+}
+.gatepulse2 {
+  position: relative;
+  top: -23px;
+}
+table,
+td,
+th {
+  border-collapse: collapse;
+  padding: 1px;
 }
 .igbt-top {
   position: relative;
   height: 10px;
   width: 10px;
-  top: -4px;
-  left: 47%;
+  top: 18px;
+    left: -13%;
 }
 .igbt-left {
   position: relative;
   height: 10px;
   width: 10px;
-  top: 15px;
-  left: -6px;
+  top: 31px;
+    left: 20px;
 }
 .igbt-bottom {
   position: relative;
   height: 10px;
   width: 10px;
-  top: 37px;
-  left: 47%;
+  top: -2px;
+    left: 91%;
 }
 .igbt-serial-top {
   position: relative;
   height: 0px;
   width: 0px;
-  top: -39px;
-  left: 11px;
+  top: 1px;
+  left: -6px;
 }
 .igbt-serial-left {
   position: relative;
   height: 0px;
   width: 0px;
-  top: 5px;
-  left: -6px;
+  top: 12px;
+    left: 9px;
 }
 .igbt-serial-bottom {
   position: relative;
   height: 0px;
   width: 0px;
-  top: 22px;
-  left: 11px;
+  top: 1px;
+  left: 47px;
 }
 .igbt-name {
   position: relative;
-  top: 41px;
-  left: -30px;
+  top: -49px;
+    left: 10px;
 }
-.left-serial {
+.load-name {
   position: relative;
-  height: 0px;
-  width: 0px;
-  top: 15px;
-  left: -11px;
-}
-.right-serial {
-  position: relative;
-  height: 0px;
-  width: 0px;top: 16px;
-  left: 53px;
-}
-.left-name{
-  position: relative;
-  top: 33px;
-  left: 13px;
-}
-.red-circle{
-  position: relative;
-  z-index: 5;
-}
-.TOP{
-  top: -2px;
-}
-.LEFT{
-  left: -2px;
-}
-.RIGHT{
-  right:-2px;
-}
-.BOTTOM{
-  bottom: -2px;
-}
-.menu-item-display{
-  display:block ;
-}
-.swal-button {
-  height: 290px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-.swal-height{
-  height: 290px;
+  top: -42px;
+  left: 51px;
 }
 #symbolpalette{
   cursor: unset;
- }
- .comp-ele{
-   cursor: pointer;
- }table,
- td,
- th {
-   border-collapse: collapse;
-   padding: 1px;
- }
+}
+.comp-ele{
+  cursor: pointer;
+}

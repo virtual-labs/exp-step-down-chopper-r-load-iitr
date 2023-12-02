@@ -1,6 +1,4 @@
-{
-    "version": 2.0,
-    "questions":[
+[
 		{
 			"question": " What is the primary function of a step-down chopper?",
 			"answers": {
@@ -52,7 +50,7 @@
 			"correctAnswer": "b"
 		}
 	]
-}
+
 
 
 

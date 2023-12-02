@@ -7,7 +7,7 @@ A Step-down Chopper, also known as a Buck Chopper, is an electronic circuit used
 such as in battery charging systems, voltage regulators, or motor speed control. The basic working principle of a Step-down Chopper involves the periodic switching of a semiconductor switch (usually a transistor) to control the output voltage. The chopper 
 operates in a time-varying ON-OFF mode, where the switch turns ON and OFF repeatedly at a certain frequency.<br>
 
-<center> <img src="images\Fig 1.PNG "height=270px; style="mix-blend-mode: darken; -webkit-filter: contrast(250%);"></center>       
+<center> <img src="images\Fig 1.png "height=270px; style="mix-blend-mode: darken; -webkit-filter: contrast(250%);"></center>       
 
 <center><b>Fig. 1 Circuit diagram of Step-down chopper</b></center>
 
