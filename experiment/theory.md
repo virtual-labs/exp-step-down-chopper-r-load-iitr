@@ -1,4 +1,12 @@
 
+<head>
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> 
+  
+</script>
+
+</head>
+
 <div style="font-family: 'Nunito Sans', sans-serif; font-size: 20px;text-align: justify;">
 
 ### **Introduction**
@@ -47,7 +55,7 @@ to V<sub>s</sub> for T<sub>ON</sub> time and is zero for T<sub>OFF</sub> time. A
 
 <center>
 
-$\frac {1}{T} \int_0^T f(x) dx......(1)$ 
+$$\frac {1}{T} \int_0^T f(x) ~ dx......(1)$$
  
 </center>
 
@@ -56,13 +64,13 @@ It should be noted that the time period of chopper DC Output Voltage Waveform is
 
 <center>
 
- $V_o = \frac {1}{T}  \int_0^{T_{ON}} V_s. dt + \int_0^{T_{OFF}} 0.dt$ 
+$$V_o = \frac {1}{T}  \int_0^{T_{ON}} V_s. dt + \int_0^{T_{OFF}} 0.dt$$
  
 </center>
 
 <center>
 
-$V_o = \frac {V_s.T_{ON}}T......(2)$ 
+$$V_o = \frac {V_s.T_{ON}}T......(2)$$ 
  
 </center>
 
@@ -70,13 +78,13 @@ Since, duty cycle α given by
 
 <center>
 
-$α= \frac {T_{ON}}{T}......(3)$ 
+$$α= \frac {T_{ON}}{T}......(3)$$ 
  
 </center>
 
 <center>
 
-$V_o = α.V_s......(4)$ 
+$$V_o = α.V_s......(4)$$ 
  
 </center>
 
@@ -84,7 +92,7 @@ Output current is given by
 
 <center>
 
-$i_o = \frac {α.V_s}{R}......(5)$ 
+$$i_o = \frac {α.V_s}{R}......(5)$$ 
  
 </center>
 
@@ -92,13 +100,13 @@ The rms output voltage is
 
 <center>
 
-$V_{rms} = \sqrt \frac {1}{T} \int_0^{T_{ON}} V_s^2. dt = V_s \sqrt \frac{T_{ON}}{T}$ 
+$$V_{rms} = \sqrt \frac {1}{T} \int_0^{T_{ON}} V_s^2. dt = V_s \sqrt \frac{T_{ON}}{T}$$ 
  
 </center>
 
 <center>
 
-$V_{rms} =  V_s* \sqrt α......(6)$ 
+$$V_{rms} =  V_s* \sqrt α......(6)$$ 
  
 </center>
       
